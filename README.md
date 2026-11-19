@@ -8,20 +8,20 @@
 
 | File | Description |
 |---|---|
-| `vending_top.v` | Top-level module connecting the buttons, vending FSM, LEDs, RGB LED, and seven-segment display |
-| `vending_fsm.v` | Moore FSM for the vending machine (25¢ item, nickels/dimes/quarters, change outputs) |
-| `seg7_driver.v` | Multiplexed driver for the 8-digit seven-segment display |
-| `button.v` | Button wrapper combining the debouncer and edge detector |
-| `debouncer_delayed.v` | Debouncer with a 20 ms delay timer |
-| `debouncer_delayed_fsm.v` | FSM used by the debouncer |
-| `edge_detector.v` | Edge detector that produces a one-clock pulse on a button press |
-| `timer_parameter.v` | Timer with a fixed final value (parameter) |
-| `rgb_driver.v` | Drives the red, green, and blue PWM channels of the RGB LED |
-| `pwm_improved.v` | PWM generator with adjustable duty cycle |
-| `timer_input.v` | Timer with a final value set by an input |
-| `vending_fsm_tb.v` | Self-checking testbench for the vending FSM |
-| `seg7_driver_tb.v` | Self-checking testbench for the seven-segment driver |
-| `nexys_a7_100t.xdc` | Pin constraints for the Nexys A7-100T |
+| [`vending_top.v`](verilog/design/vending_top.v) | Top-level module connecting the buttons, vending FSM, LEDs, RGB LED, and seven-segment display |
+| [`vending_fsm.v`](verilog/design/vending_fsm.v) | Moore FSM for the vending machine (25¢ item, nickels/dimes/quarters, change outputs) |
+| [`seg7_driver.v`](verilog/design/seg7_driver.v) | Multiplexed driver for the 8-digit seven-segment display |
+| [`button.v`](verilog/design/button.v) | Button wrapper combining the debouncer and edge detector |
+| [`debouncer_delayed.v`](verilog/design/debouncer_delayed.v) | Debouncer with a 20 ms delay timer |
+| [`debouncer_delayed_fsm.v`](verilog/design/debouncer_delayed_fsm.v) | FSM used by the debouncer |
+| [`edge_detector.v`](verilog/design/edge_detector.v) | Edge detector that produces a one-clock pulse on a button press |
+| [`timer_parameter.v`](verilog/design/timer_parameter.v) | Timer with a fixed final value (parameter) |
+| [`rgb_driver.v`](verilog/design/rgb_driver.v) | Drives the red, green, and blue PWM channels of the RGB LED |
+| [`pwm_improved.v`](verilog/design/pwm_improved.v) | PWM generator with adjustable duty cycle |
+| [`timer_input.v`](verilog/design/timer_input.v) | Timer with a final value set by an input |
+| [`vending_fsm_tb.v`](verilog/sim/vending_fsm_tb.v) | Self-checking testbench for the vending FSM |
+| [`seg7_driver_tb.v`](verilog/sim/seg7_driver_tb.v) | Self-checking testbench for the seven-segment driver |
+| [`nexys_a7_100t.xdc`](verilog/constraints/nexys_a7_100t.xdc) | Pin constraints for the Nexys A7-100T |
 
 ## Part 1 – Vending Machine
 
